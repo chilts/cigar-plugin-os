@@ -13,7 +13,7 @@ var os = require('os');
 
 // ----------------------------------------------------------------------------
 
-module.exports = function(callback) {
+module.exports = function(opts, callback) {
     process.nextTick(function() {
         callback(null, {
             hostname : os.hostname(),
